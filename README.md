@@ -51,4 +51,14 @@ Abaixo, seguem links bem bacanas, sobre tópicos mencionados durante a aula:
 [Neste link](https://drive.google.com/file/d/1crVPOVl6ok2HeYjh3fjQuGQn2lDZVHrn/view?usp=sharing), seguem os slides apresentados como o roteiro utilizado para o desenvolviemnto do projeto da nossa sessão.
 
 
+A PROPÓSITO...
+
+Adicionado o AddressService.cs para iniciar a tratativa de Endereços por meio do CEP através do projeto [CEPUtil](https://github.com/uliss3s/ceputil) porém, não obstante, o Java 11 reclama do trecho
+```
+URL url = new URL("http://viacep.com.br/ws/"+ cep +"/json");
+            URLConnection urlConnection = url.openConnection();
+
+```
+Mesmo alterando para "URLConnection urlConnection = url.HttpsURLConnection()" conforme slack, sem sucesso novamente alertando que se trata de uma "URL ABSTRATA"
+
 
